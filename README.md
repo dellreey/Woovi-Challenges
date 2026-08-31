@@ -46,6 +46,12 @@ O primeiro passo registra a criação bem-sucedida de um webhook ativo para o ev
 
 ![Configuração do webhook para o Ticket 01](evidencias/ticket-01/00-webhook-configurado.png)
 
+### Ticket 01 — confirmação do webhook
+
+Após criar a cobrança e simular seu pagamento no Sandbox, o endpoint de teste recebeu o `POST` com o evento `OPENPIX:TRANSACTION_RECEIVED`, encerrando o fluxo de validação.
+
+![Evento OPENPIX:TRANSACTION_RECEIVED recebido pelo endpoint de teste](evidencias/ticket-01/04-webhook-recebido.png)
+
 ## Segurança
 
 Não versione credenciais, tokens, chaves, payloads com dados pessoais, exports de produção ou qualquer segredo. Use apenas exemplos sanitizados e remova identificadores sensíveis antes de registrar evidências.
