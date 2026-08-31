@@ -40,6 +40,12 @@ Evidências práticas são opcionais e não substituem a investigação do caso 
 
 O Ticket 01 inclui um fluxo validado no Sandbox da Woovi: configuração do webhook `OPENPIX:TRANSACTION_RECEIVED`, criação de uma cobrança de R$ 1,00, simulação de pagamento e recebimento do `POST` pelo endpoint de teste. As capturas estão em [`evidencias/ticket-01/`](evidencias/ticket-01/). Esse resultado demonstra o fluxo técnico em ambiente controlado, mas não comprova a causa de uma falha em operações reais.
 
+### Ticket 01 — webhook configurado no Sandbox
+
+O primeiro passo registra a criação bem-sucedida de um webhook ativo para o evento `OPENPIX:TRANSACTION_RECEIVED` pela collection OpenPix no Postman. Credenciais e URL temporária de recebimento foram ocultadas.
+
+![Configuração do webhook para o Ticket 01](evidencias/ticket-01/00-webhook-configurado.png)
+
 ## Segurança
 
 Não versione credenciais, tokens, chaves, payloads com dados pessoais, exports de produção ou qualquer segredo. Use apenas exemplos sanitizados e remova identificadores sensíveis antes de registrar evidências.
