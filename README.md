@@ -46,6 +46,12 @@ O primeiro passo registra a criação bem-sucedida de um webhook ativo para o ev
 
 ![Configuração do webhook para o Ticket 01](evidencias/ticket-01/00-webhook-configurado.png)
 
+### Ticket 01 — cobrança de teste criada
+
+Com o webhook ativo, a collection OpenPix criou uma cobrança de R$ 1,00 no Sandbox. Essa cobrança foi usada na simulação de pagamento que dispara o evento de webhook.
+
+![Cobrança de teste criada com sucesso no Sandbox](evidencias/ticket-01/02-cobranca-criada.png)
+
 ### Ticket 01 — confirmação do webhook
 
 Após criar a cobrança e simular seu pagamento no Sandbox, o endpoint de teste recebeu o `POST` com o evento `OPENPIX:TRANSACTION_RECEIVED`, encerrando o fluxo de validação.
