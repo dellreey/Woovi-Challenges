@@ -4,8 +4,9 @@ Este repositório organiza as respostas dos 11 tickets do desafio técnico de Cu
 
 ## Estrutura
 
-- `respostas/`: uma resposta para cada um dos 11 tickets, com nome descritivo. Nenhuma resposta de ticket foi criada nesta estrutura inicial.
+- `respostas/`: uma resposta para cada um dos 11 tickets, com nome descritivo.
 - `respostas/TEMPLATE.md`: modelo obrigatório para cada resposta.
+- `evidencias/`: evidências complementares de testes controlados, organizadas por ticket. Atualmente contém o fluxo Sandbox do Ticket 01.
 - `referencias/fontes.md`: fontes iniciais e regras para pesquisa e citação.
 - `.cursor/`: instruções locais já existentes; deve ser preservado.
 
@@ -32,6 +33,12 @@ Trate o relato como evidência inicial, não como diagnóstico. Diferencie fatos
 3. Consulte fontes primárias relevantes e registre links, data de acesso quando necessário e suposições a validar.
 4. Priorize verificações seguras, rápidas e discriminatórias antes de envolver outras equipes ou terceiros.
 5. Revise a resposta: ela deve ser executável por outra pessoa, não prometer prazo sem evidência e deixar claro o próximo passo.
+
+## Evidências complementares
+
+Evidências práticas são opcionais e não substituem a investigação do caso relatado. Quando um teste controlado for útil, registre seu objetivo, ambiente, resultado e limitação na seção **Fontes e suposições** da resposta correspondente.
+
+O Ticket 01 inclui um fluxo validado no Sandbox da Woovi: configuração do webhook `OPENPIX:TRANSACTION_RECEIVED`, criação de uma cobrança de R$ 1,00, simulação de pagamento e recebimento do `POST` pelo endpoint de teste. As capturas estão em [`evidencias/ticket-01/`](evidencias/ticket-01/). Esse resultado demonstra o fluxo técnico em ambiente controlado, mas não comprova a causa de uma falha em operações reais.
 
 ## Segurança
 
