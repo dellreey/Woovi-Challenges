@@ -1,0 +1,34 @@
+---
+description: Workflow economico de tres agentes usando Orca Orchestration
+alwaysApply: true
+---
+
+# Workflow de tres agentes
+
+Quando uma tarefa solicitar implementacao, use a habilidade de orquestracao do Orca.
+
+## Limites
+
+- Use exatamente tres agentes no total, incluindo o coordenador.
+- Mantenha nested worker depth em 1.
+- Nao crie branches ou worktrees adicionais sem solicitacao.
+- Nenhum trabalhador pode despachar outros agentes.
+- Mantenha prompts, contexto e relatorios curtos.
+- Nunca use GPT-5.6 Sol, pro, high, xhigh, max ou ultra.
+- Se os modelos exigidos nao estiverem disponiveis, pare antes de despachar.
+
+## Agentes
+
+1. Coordenador: GPT-5.6 Luna com esforco low.
+2. Implementador: GPT-5.6 Terra com esforco medium.
+3. Testador e revisor: GPT-5.6 Luna com esforco low.
+
+## Execucao
+
+1. O coordenador examina a tarefa e produz um plano curto.
+2. Despacha um implementador e espera sua conclusao.
+3. Despacha um testador/revisor e espera sua conclusao.
+4. Corrige somente problemas confirmados.
+5. Entrega um resumo final curto com arquivos alterados e testes executados.
+
+Para pedidos de explicacao, pesquisa ou planejamento sem implementacao, nao despache trabalhadores.
