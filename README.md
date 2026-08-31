@@ -26,6 +26,22 @@ Não crie respostas para tickets que não estejam no enunciado nem deixe requisi
 
 Trate o relato como evidência inicial, não como diagnóstico. Diferencie fatos, hipóteses, inferências e lacunas; proponha testes que confirmem ou descartem cada hipótese; e não invente status, logs, endpoints, campos, políticas, prazos ou ações internas. A resposta ao cliente deve ser pronta para envio, objetiva e empática, sem expor informações internas, dados pessoais ou segredos.
 
+## Cobertura dos tickets
+
+| Ticket | Tema | Resposta | Status |
+| --- | --- | --- | --- |
+| 01 | Webhook não chegou após pagamento confirmado | [Abrir](respostas/01-webhook-nao-chegou.md) | Concluído |
+| 02 | Pix Automático trimestral | [Abrir](respostas/02-pix-automatico-trimestral.md) | Concluído |
+| 03 | Pay-out `FAILED` sem motivo | [Abrir](respostas/03-payout-failed-sem-motivo.md) | Concluído |
+| 04 | Taxa de cobrança Pix acima do contrato | [Abrir](respostas/04-cobranca-acima-do-contrato.md) | Concluído |
+| 05 | Boleto Pix sem baixa no DDA | [Abrir](respostas/05-boleto-pix-sem-baixa-dda.md) | Concluído |
+| 06 | Reembolso sem identificadores no extrato | [Abrir](respostas/06-reembolso-extrato-sem-identificacao.md) | Concluído |
+| 07 | Reivindicação de chave Pix | [Abrir](respostas/07-reivindicacao-chave-pix.md) | Concluído |
+| 08 | `correlationID` em crédito e débito de subcontas | [Abrir](respostas/08-correlationid-credit-debit.md) | Concluído |
+| 09 | Recuperação de 2FA | [Abrir](respostas/09-cliente-perdeu-2fa.md) | Concluído |
+| 10 | Saldo travado em subcontas BaaS | [Abrir](respostas/10-baas-saldo-travado-subcontas.md) | Concluído |
+| 11 | Split de cobrança divergente | [Abrir](respostas/11-charge-request-invalido.md) | Concluído |
+
 ## Como trabalhar
 
 1. Leia o ticket e registre produto, impacto, atores, identificadores, cronologia, comportamento esperado e observado.
@@ -38,7 +54,7 @@ Trate o relato como evidência inicial, não como diagnóstico. Diferencie fatos
 
 Evidências práticas são opcionais e não substituem a investigação do caso relatado. Quando um teste controlado for útil, registre seu objetivo, ambiente, resultado e limitação na seção **Fontes e suposições** da resposta correspondente.
 
-O Ticket 01 inclui um fluxo validado no Sandbox da Woovi: configuração do webhook `OPENPIX:TRANSACTION_RECEIVED`, criação de uma cobrança de R$ 1,00, simulação de pagamento e recebimento do `POST` pelo endpoint de teste. As capturas estão em [`evidencias/ticket-01/`](evidencias/ticket-01/). Esse resultado demonstra o fluxo técnico em ambiente controlado, mas não comprova a causa de uma falha em operações reais.
+O Ticket 01 inclui um fluxo validado no Sandbox da Woovi: configuração do webhook `OPENPIX:TRANSACTION_RECEIVED`, criação de uma cobrança de R$ 1,00, simulação de pagamento e recebimento do `POST` pelo endpoint de teste. As capturas e a descrição do fluxo estão em [`evidencias/ticket-01/`](evidencias/ticket-01/). Esse resultado demonstra o fluxo técnico em ambiente controlado, mas não comprova a causa de uma falha em operações reais.
 
 ### Ticket 01 — webhook configurado no Sandbox
 
