@@ -82,10 +82,11 @@ Não há elementos suficientes para declarar incidente. O reenvio bem-sucedido �
 
 Foi realizado um teste controlado no Sandbox da Woovi com a collection OpenPix no Postman: webhook configurado para `OPENPIX:TRANSACTION_RECEIVED`, cobrança de R$ 1,00 criada, pagamento simulado e `POST` recebido pelo endpoint de teste. O teste confirma o fluxo técnico e a resposta de sucesso do endpoint, mas não substitui a análise das tentativas originais das cobranças da Acme.
 
-1. Webhook de teste recebido com o evento configurado: [captura](../evidencias/ticket-01/01-webhook-teste.png).
-2. Cobrança criada com sucesso no Sandbox: [captura](../evidencias/ticket-01/02-cobranca-criada.png).
-3. Pagamento simulado e confirmado no Sandbox: [captura](../evidencias/ticket-01/03-pagamento-simulado.png).
-4. Entrega do webhook `OPENPIX:TRANSACTION_RECEIVED` ao endpoint de teste: [captura](../evidencias/ticket-01/04-webhook-recebido.png).
+1. Webhook configurado com sucesso para `OPENPIX:TRANSACTION_RECEIVED`: [captura](../evidencias/ticket-01/00-webhook-configurado.png).
+2. Webhook de teste recebido com o evento configurado: [captura](../evidencias/ticket-01/01-webhook-teste.png).
+3. Cobrança criada com sucesso no Sandbox: [captura](../evidencias/ticket-01/02-cobranca-criada.png).
+4. Pagamento simulado e confirmado no Sandbox: [captura](../evidencias/ticket-01/03-pagamento-simulado.png).
+5. Entrega do webhook `OPENPIX:TRANSACTION_RECEIVED` ao endpoint de teste: [captura](../evidencias/ticket-01/04-webhook-recebido.png).
 
 ### Suposições a validar
 
