@@ -26,6 +26,19 @@ Não crie respostas para tickets que não estejam no enunciado nem deixe requisi
 
 Trate o relato como evidência inicial, não como diagnóstico. Diferencie fatos, hipóteses, inferências e lacunas; proponha testes que confirmem ou descartem cada hipótese; e não invente status, logs, endpoints, campos, políticas, prazos ou ações internas. A resposta ao cliente deve ser pronta para envio, objetiva e empática, sem expor informações internas, dados pessoais ou segredos.
 
+Cada arquivo inclui, na seção **5. Resposta ao cliente**, uma mensagem pronta para envio. Essas respostas reconhecem o impacto relatado, comunicam apenas o que está confirmado, solicitam os dados indispensáveis pelo canal seguro e indicam o próximo passo sem prometer prazos ou ações não validadas.
+
+### Exemplo de resposta ao cliente
+
+> Olá, time.
+>
+> Entendemos o impacto do evento não recebido e estamos correlacionando a cobrança, a configuração vigente e as tentativas de entrega. Para complementar a análise, pedimos os horários com fuso, a confirmação da URL mascarada e os logs sanitizados do endpoint no intervalo, sem payloads ou credenciais.
+>
+> Retornaremos assim que a correlação indicar o escopo confirmado e o próximo passo seguro.
+>
+> Atenciosamente,
+> Equipe de Suporte Woovi
+
 ## Cobertura dos tickets
 
 | Ticket | Tema | Resposta | Status |
