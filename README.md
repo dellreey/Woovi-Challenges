@@ -62,11 +62,23 @@ O primeiro passo registra a criação bem-sucedida de um webhook ativo para o ev
 
 ![Configuração do webhook para o Ticket 01](evidencias/ticket-01/00-webhook-configurado.png)
 
+### Ticket 01 — teste de disponibilidade do endpoint
+
+Durante o cadastro, o endpoint temporário recebeu a chamada de teste com o evento `OPENPIX:TRANSACTION_RECEIVED`, confirmando que estava acessível para a Woovi.
+
+![Chamada de teste recebida pelo endpoint temporário](evidencias/ticket-01/01-webhook-teste.png)
+
 ### Ticket 01 — cobrança de teste criada
 
 Com o webhook ativo, a collection OpenPix criou uma cobrança de R$ 1,00 no Sandbox. Essa cobrança foi usada na simulação de pagamento que dispara o evento de webhook.
 
 ![Cobrança de teste criada com sucesso no Sandbox](evidencias/ticket-01/02-cobranca-criada.png)
+
+### Ticket 01 — pagamento simulado
+
+No painel Sandbox, o pagamento da cobrança de R$ 1,00 foi simulado e confirmado antes da verificação da entrega do evento final.
+
+![Pagamento de teste confirmado no Sandbox](evidencias/ticket-01/03-pagamento-simulado.png)
 
 ### Ticket 01 — confirmação do webhook
 
